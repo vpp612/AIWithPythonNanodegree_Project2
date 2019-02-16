@@ -13,9 +13,9 @@ import torch.nn.functional as F
 def get_input_args():
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('--image_path', type=str, default='flowers/test/74/image_01151.jpg', required=True,
+    parser.add_argument('image_path', type=str, default='flowers/test/74/image_01151.jpg',
                         help="Image file path to use for prediction.")
-    parser.add_argument('--checkpoint_path', type=str, default='checkpoint.pth', required=True,
+    parser.add_argument('checkpoint_path', type=str, default='checkpoint.pth',
                         help="Training checkpoint file path to load.")
     parser.add_argument('--top_k', type=int, default=5, help="Number of predicted classes to return.")
     parser.add_argument('--category_names', type=str, default='cat_to_name.json', help="File that contains the category names.")

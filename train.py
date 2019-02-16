@@ -13,7 +13,7 @@ import torch.nn.functional as F
 def get_input_args():
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('--dir', type = str, default = 'flowers/', required=True, help="The folder with the pet images.")
+    parser.add_argument('dir', type = str, default = 'flowers/', help="The folder with the pet images.")
     parser.add_argument('--arch', type = str, default = 'vgg13', help="The Model Architecture to use (vgg13, vgg16 or vgg19).")
     parser.add_argument('--learning_rate', type = float, default = 0.01, help="Learning rate for the model's Adam optimizer.")
     parser.add_argument('--hidden_units', type = int, default = 512, help="Number of hidden units in the hidden layer for the neural network.")
