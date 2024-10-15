@@ -146,7 +146,7 @@ def save_model(model, optimizer, epochs, model_name, train_data):
 
     torch.save(checkpoint, 'checkpoint.pth')
 
-# main execution
+# Main Execution
 args = get_input_args()
 trainloader, validateloader, testloader, train_data = load_data(args.dir)
 device = get_device(args.gpu)
