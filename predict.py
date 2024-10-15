@@ -88,7 +88,7 @@ def print_probabilities(top_p, top_class, model):
     for c in range(len(top_class)):
         print('{}- {}%'.format(top_class[c], top_p[c]*100))
 
-# main execution
+# Main Execution
 args = get_input_args()
 categories_to_name = map_labels(args.category_names)
 device = get_device(args.gpu)
